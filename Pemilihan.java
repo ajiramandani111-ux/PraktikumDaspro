@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SistemUjianOnline {
+public class Pemilihan {
     public static void main(String[] args) {
         // Membaca input presensi dan nilai tugas
         Scanner scanner = new Scanner(System.in);
@@ -22,7 +22,5 @@ public class SistemUjianOnline {
             }
         }
 
-        // Menutup scanner untuk mencegah memory leak
-        scanner.close();
     }
 }
