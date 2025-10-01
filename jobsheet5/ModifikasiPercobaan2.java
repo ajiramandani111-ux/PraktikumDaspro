@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ifElseCetakKRS15 {
+public class ModifikasiPercobaan2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
