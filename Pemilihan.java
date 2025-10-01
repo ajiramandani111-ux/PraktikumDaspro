@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Pemilihan {
     public static void main(String[] args) {
         // Membaca input presensi dan nilai tugas
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Masukkan persentase kehadiran: ");
         double presensiKehadiran = scanner.nextDouble();
