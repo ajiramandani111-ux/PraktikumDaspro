@@ -34,3 +34,22 @@ jawab
 2. saat tidak ada case yang dipilih, maka akan menampilkan default
 3. ✅
 4. ✅
+
+   Pertanyaan percobaan 3
+
+1. Apa yang terjadi jika mahasiswa menjawab "No" pada pertanyaan bebas kompen?
+Mengapa demikian?
+2. Jelaskan maksud dari potongan kode berikut!
+3. Bagaimana alur pemeriksaan syarat mahasiswa dari awal sampai akhir? Jelaskan secara 
+runtut untuk semua kondisi!
+
+jawab
+
+1. langsung menampilkan else yang setara, yaitu "Gagal! Mahasiswa masih memiliki tanggungan kompen."
+2. jika P1 lebih dari atau sama dengan 8 dan p2 lebih dari atau sama dengan 4 maka akan meneruskan ke kondisi kedua(jika ada),
+3. mahasiswa akan ditanya apakah sudah bebas kompen,
+   • jika belum maka pesan gagal karena memiliki kompen akan muncul
+   • jika sudah maka akan memasuki kondisi kedua
+   apakah mahasiswa sudah memenuhi log bimbingan sesuai kedua syarat
+   • jika belum(salah satu atau keduanya) maka tidak bisa mengikuti ujian skripsi
+   • jika keduaya sudah terpenuhi maka dianggap lolos
