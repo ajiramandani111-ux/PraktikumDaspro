@@ -11,6 +11,31 @@ public class tes {
         System.out.print("Masukkan NIM: ");
         String nim = rawr.nextLine();
 
+        System.out.println("");
+        System.out.println("---Mata Kuliah 1: Algoritma dan Pemrograman---");
+
+        System.out.print("Masukkan Nilai UTS: ");
+        UTS1 = rawr.nextDouble();
+
+        System.out.print("Masukkan Nilai UAS: ");
+        UAS1 = rawr.nextDouble();
+
+        System.out.print("Masukkan Nilai Tugas: ");
+        TUGAS1 = rawr.nextDouble();
+
+        System.out.println("");
+        System.out.println("---Mata Kuliah 2: Struktur Data---");
+
+        System.out.print("Masukkan Nilai UTS: ");
+        UTS2 = rawr.nextDouble();
+
+        System.out.print("Masukkan Nilai UAS: ");
+        UAS2 = rawr.nextDouble();
+
+        System.out.print("Masukkan Nilai Tugas: ");
+        TUGAS2 = rawr.nextDouble();
+        System.out.println("");
+
         rawr.close();
     }
   }
