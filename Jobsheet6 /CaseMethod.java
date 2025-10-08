@@ -2,6 +2,9 @@ import java.util.Scanner;
 public class tes {
     public static void main(String[] args) {
         Scanner rawr = new Scanner(System.in);
+        double UTS1, UAS1, TUGAS1, UTS2, UAS2, TUGAS2;
+        double nilaiAkhir1, nilaiAkhir2, NilaiAkhir;
+        String grade = "-", status = "-";
         
         System.out.println("===INPUT DATA MAHASISWA===");
 
