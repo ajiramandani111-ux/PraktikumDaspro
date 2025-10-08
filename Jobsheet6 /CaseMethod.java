@@ -1,3 +1,4 @@
+package Jobsheet6;
 import java.util.Scanner;
 public class tes {
     public static void main(String[] args) {
@@ -38,6 +39,61 @@ public class tes {
         System.out.print("Masukkan Nilai Tugas: ");
         TUGAS2 = rawr.nextDouble();
         System.out.println("");
+
+        nilaiAkhir1 = (0.3 * UTS1) + (0.4 * UAS1) + (0.3 * TUGAS1);
+        nilaiAkhir2 = (0.3 * UTS2) + (0.4 * UAS2) + (0.3 * TUGAS2);
+        NilaiAkhir = (nilaiAkhir1 + nilaiAkhir2) / 2;
+
+        if (NilaiAkhir >= 80 && NilaiAkhir <= 100) {
+            grade = "A";
+        } else {
+            if (NilaiAkhir >= 73 && NilaiAkhir <= 79) {
+               grade = "B+";
+            } else {
+               if (NilaiAkhir >= 65 && NilaiAkhir <= 72) {
+                   grade = "B";
+               } else {
+                   if (NilaiAkhir >= 60 && NilaiAkhir <= 64) {
+                      grade = "C+";
+                   } else {
+                      if (NilaiAkhir >= 50 && NilaiAkhir <= 59) {
+                       grade = "C";
+                      } else {
+                         if (NilaiAkhir >= 39 && NilaiAkhir <= 49) {
+                            grade = "D";
+                         } else if (NilaiAkhir < 39 && NilaiAkhir >= 0) {
+                                   grade = "E";
+                               } else {
+                                   grade = "-";
+                               }
+                         }
+                     }
+                 }
+             }
+         }
+        if (NilaiAkhir >= 70) {
+            status = "LULUS";
+        } else {
+            status = "TIDAK LULUS";
+        }
+
+        System.out.println("");
+
+        System.out.println("===HASIL PENILAIAN AKADEMIK===");
+
+        System.out.println("Nama Yang Terdata: " + nama);
+        System.out.println("NIM Yang Terdata: " + nim);
+        System.out.println("");
+
+        System.out.println("Mata Kuliah\t\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus" );
+        System.out.println("----------------------------------------------------------------------------------------");
+        System.out.println("Algoritma dan Pemrograman\t" + UTS1 + "\t" + UAS1 + "\t" + TUGAS1 + "\t" + nilaiAkhir1 + "\t\t" + grade  + "\t\t" + status);
+        System.out.print("Struktur Data\t\t\t" + UTS2 + "\t" + UAS2 + "\t" + TUGAS2 + "\t" + nilaiAkhir2 + "\t\t" + grade  + "\t\t" + status);
+        System.out.println("");
+
+        System.out.println("Rata-rata Nilai Akhir: " + NilaiAkhir);
+        System.out.println("Status Semester: " + status);
+            
 
         rawr.close();
     }
