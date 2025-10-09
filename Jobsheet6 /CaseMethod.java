@@ -1,4 +1,4 @@
-package Jobsheet6;
+package Jobsheet6 ;
 import java.util.Scanner;
 public class CaseMethod {
     public static void main(String[] args) {
@@ -11,33 +11,84 @@ public class CaseMethod {
 
         System.out.print("Masukkan Nama: ");
         String nama = rawr.nextLine();
+        while (!nama.matches("[a-zA-Z ]+")) {
+            System.out.println("namamu pakai angka? yang bener");
+            System.out.print("Masukkan Nama: ");
+            nama = rawr.nextLine();
+        }
 
         System.out.print("Masukkan NIM: ");
         String nim = rawr.nextLine();
+        while (!nim.matches("\\d{8,9}+")) {
+            System.out.println("NIM hanya 8-9 karakter, jangan nego");
+            System.out.print("Masukkan NIM: ");
+            nim = rawr.nextLine();
+        }
 
         System.out.println("");
         System.out.println("---Mata Kuliah 1: Algoritma dan Pemrograman---");
 
         System.out.print("Masukkan Nilai UTS: ");
         UTS1 = rawr.nextDouble();
+        while (UTS1 < 1 || UTS1 > 100 ){
+            System.out.println("input nilai yang masuk akal woy");
+            System.out.print("Masukkan Nilai UTS: ");
+        UTS1 = rawr.nextDouble();
+
+        }
 
         System.out.print("Masukkan Nilai UAS: ");
         UAS1 = rawr.nextDouble();
+         while (UAS1 < 1 || UAS1 > 100 ){
+            System.out.println("input nilai yang masuk akal woy");
+            System.out.print("Masukkan Nilai UAS: ");
+        UAS1 = rawr.nextDouble();
+
+        }
+
 
         System.out.print("Masukkan Nilai Tugas: ");
         TUGAS1 = rawr.nextDouble();
+         while (TUGAS1 < 1 || TUGAS1 > 100 ){
+            System.out.println("input nilai yang masuk akal woy");
+            System.out.print("Masukkan Nilai Tugas: ");
+        TUGAS1 = rawr.nextDouble();
+
+        }
+
 
         System.out.println("");
         System.out.println("---Mata Kuliah 2: Struktur Data---");
 
         System.out.print("Masukkan Nilai UTS: ");
         UTS2 = rawr.nextDouble();
+         while (UTS2 < 1 || UTS2 > 100 ){
+            System.out.println("input nilai yang masuk akal woy");
+            System.out.print("Masukkan Nilai UTS: ");
+        UTS2 = rawr.nextDouble();
+
+        }
+
 
         System.out.print("Masukkan Nilai UAS: ");
         UAS2 = rawr.nextDouble();
+         while (UAS2 < 1 || UAS2 > 100 ){
+            System.out.println("input nilai yang masuk akal woy");
+            System.out.print("Masukkan Nilai UAS: ");
+        UAS2 = rawr.nextDouble();
+
+        }
+
 
         System.out.print("Masukkan Nilai Tugas: ");
         TUGAS2 = rawr.nextDouble();
+         while (TUGAS2 < 1 || TUGAS2 > 100 ){
+            System.out.println("input nilai yang masuk akal woy");
+            System.out.print("Masukkan Nilai TUGAS: ");
+        TUGAS2 = rawr.nextDouble();
+
+        }
+
         System.out.println("");
 
         nilaiAkhir1 = (0.3 * UTS1) + (0.4 * UAS1) + (0.3 * TUGAS1);
