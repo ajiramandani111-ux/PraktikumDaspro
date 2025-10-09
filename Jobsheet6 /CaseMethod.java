@@ -1,6 +1,6 @@
 package Jobsheet6;
 import java.util.Scanner;
-public class tes {
+public class CaseMethod {
     public static void main(String[] args) {
         Scanner rawr = new Scanner(System.in);
         double UTS1, UAS1, TUGAS1, UTS2, UAS2, TUGAS2;
