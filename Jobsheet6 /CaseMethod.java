@@ -143,7 +143,11 @@ public class CaseMethod {
         System.out.println("");
 
         System.out.println("Rata-rata Nilai Akhir: " + NilaiAkhir);
-        System.out.println("Status Semester: " + status);
+        if (NilaiAkhir < 70) {
+        System.out.println("Status Semester: TIDAK LULUS (Rata-rata < 70) ");
+        }else{
+            System.out.print("Status Semeser: LULUS");
+        }
             
 
         rawr.close();
