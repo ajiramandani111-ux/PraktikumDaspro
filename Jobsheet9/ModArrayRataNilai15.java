@@ -6,7 +6,6 @@ public class ModArrayRataNilai15{
         
         System.out.print("Masukkan jumlah mahasiswa: ");
             int JmlMhs = sc.nextInt();
-        
         int nilaiMhs[]=new int[JmlMhs], jmlTinggi = 0, jmlRendah=0;
         double nilaiTinggi = 0, nilaiRendah=0;
         String status1 = " ",status2 = " ";
