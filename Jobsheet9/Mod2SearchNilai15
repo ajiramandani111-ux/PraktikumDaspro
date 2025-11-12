@@ -1,0 +1,38 @@
+package Jobsheet9;
+import java.util.Scanner;
+
+public class Mod2SearchNilai15 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan banyak nilai yang diinput: ");
+        int N = sc.nextInt();
+
+        int arrNilai[] = new int[N];
+
+        for (int i = 0; i < arrNilai.length; i++) {
+            System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
+            arrNilai[i] = sc.nextInt();
+        }
+
+        System.out.println();
+        System.out.print("Masukkan nilai yang dicari: ");
+        int key = sc.nextInt();
+
+        int hasil = 0; 
+
+        for (int i = 0; i < arrNilai.length; i++) {
+            if (key == arrNilai[i]) {
+                hasil = i;
+            }
+        }
+
+        System.out.println();
+        if (hasil != 0) {
+            System.out.println("Nilai " + key + " ditemukan di indeks ke-" + (hasil +1));
+        } else {
+            System.out.println("Nilai tidak ditemukan.");
+        }
+        System.out.println();
+    }
+}
